@@ -5,7 +5,6 @@ import { addTodo } from "../Redux/Actions";
 const AddToDo = () => {
   const [text, setText] = useState("");
   const dispatch = useDispatch();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim()) {
